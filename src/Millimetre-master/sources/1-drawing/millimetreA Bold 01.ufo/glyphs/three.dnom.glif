@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="three.dnom" format="1">
+  <advance width="400"/>
+  <outline>
+    <component base="three.sup" xOffset="-10" yOffset="-400"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.typemytype.robofont.guides</key>
+      <array>
+      </array>
+      <key>com.typemytype.robofont.mark</key>
+      <array>
+        <real>0.0</real>
+        <real>0.0</real>
+        <real>0.0</real>
+        <real>0.1987</real>
+      </array>
+    </dict>
+  </lib>
+</glyph>

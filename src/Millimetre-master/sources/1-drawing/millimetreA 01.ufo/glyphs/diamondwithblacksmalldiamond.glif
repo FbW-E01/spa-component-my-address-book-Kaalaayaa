@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="diamondwithblacksmalldiamond" format="1">
+  <advance width="1000"/>
+  <unicode hex="25C8"/>
+  <outline>
+    <contour>
+      <point x="500" y="3" type="line"/>
+      <point x="748" y="250" type="line"/>
+      <point x="500" y="500" type="line"/>
+      <point x="253" y="250" type="line"/>
+    </contour>
+    <component base="whitediamond"/>
+  </outline>
+</glyph>

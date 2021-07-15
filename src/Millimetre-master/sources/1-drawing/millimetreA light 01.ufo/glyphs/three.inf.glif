@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="three.inf" format="1">
+  <advance width="400"/>
+  <outline>
+    <component base="three.sup" xOffset="-10" yOffset="-600"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.typemytype.robofont.guides</key>
+      <array>
+      </array>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="circleuprightquadrantblack" format="1">
+  <advance width="1000"/>
+  <unicode hex="25D4"/>
+  <outline>
+    <contour>
+      <point x="915" y="250" type="line"/>
+      <point x="915" y="520"/>
+      <point x="775" y="665"/>
+      <point x="500" y="665" type="curve"/>
+      <point x="500" y="250" type="line"/>
+    </contour>
+    <component base="whitecircle"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.typemytype.robofont.mark</key>
+      <array>
+        <real>0.0</real>
+        <real>0.0</real>
+        <real>1.0</real>
+        <real>1.0</real>
+      </array>
+    </dict>
+  </lib>
+</glyph>

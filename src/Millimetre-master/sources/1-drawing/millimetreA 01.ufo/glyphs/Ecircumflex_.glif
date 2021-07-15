@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="Ecircumflex" format="1">
+  <advance width="600"/>
+  <unicode hex="00CA"/>
+  <outline>
+    <component base="E"/>
+    <component base="circumflex" xOffset="200" yOffset="100"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.typemytype.robofont.guides</key>
+      <array>
+      </array>
+      <key>com.typemytype.robofont.mark</key>
+      <array>
+        <real>0.0</real>
+        <real>0.0</real>
+        <real>0.0</real>
+        <real>0.1987</real>
+      </array>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="circleuprightquadrantblack" format="1">
+  <advance width="1000"/>
+  <unicode hex="25D4"/>
+  <outline>
+    <contour>
+      <point x="915" y="250" type="line"/>
+      <point x="915" y="520"/>
+      <point x="775" y="665"/>
+      <point x="500" y="665" type="curve"/>
+      <point x="500" y="250" type="line"/>
+    </contour>
+    <component base="whitecircle"/>
+  </outline>
+</glyph>

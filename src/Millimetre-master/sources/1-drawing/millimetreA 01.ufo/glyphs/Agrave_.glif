@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="Agrave" format="1">
+  <advance width="600"/>
+  <unicode hex="00C0"/>
+  <outline>
+    <component base="grave" xOffset="200" yOffset="100"/>
+    <component base="A"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.typemytype.robofont.mark</key>
+      <array>
+        <real>0.0</real>
+        <real>0.0</real>
+        <real>0.0</real>
+        <real>0.1987</real>
+      </array>
+    </dict>
+  </lib>
+</glyph>

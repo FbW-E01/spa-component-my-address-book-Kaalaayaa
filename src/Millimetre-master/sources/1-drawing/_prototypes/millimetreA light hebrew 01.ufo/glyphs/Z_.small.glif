@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="Z.small" format="1">
+  <advance width="600"/>
+  <outline>
+    <component base="z"/>
+    <contour>
+      <point x="270" y="450" type="move" name="top"/>
+    </contour>
+  </outline>
+</glyph>

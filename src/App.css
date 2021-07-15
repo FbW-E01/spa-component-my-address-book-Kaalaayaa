@@ -1,0 +1,18 @@
+.font {
+ font-family: "Basteleur";
+}
+
+.form input{
+    font-family: "Millimetre";
+}
+
+.form button{
+    font-family: "Millimetre";
+}
+
+.logo {
+    margin: auto;
+  width: 200px;
+  height: 200px;
+  background-image: url(./progress-loading-bar-buffering-download-upload-and-loading-icon-vector.jpg);
+}

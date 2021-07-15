@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="D" format="1">
+  <advance width="800"/>
+  <unicode hex="0044"/>
+  <outline>
+    <contour>
+      <point x="150" y="0" type="line"/>
+      <point x="150" y="700" type="line"/>
+      <point x="50" y="700" type="line"/>
+      <point x="50" y="0" type="line"/>
+    </contour>
+    <contour>
+      <point x="480" y="700" type="curve" smooth="yes"/>
+      <point x="100" y="700" type="line"/>
+      <point x="105" y="600" type="line"/>
+      <point x="400" y="600" type="line"/>
+      <point x="615" y="600"/>
+      <point x="650" y="575"/>
+      <point x="650" y="410" type="curve" smooth="yes"/>
+      <point x="650" y="350" type="line"/>
+      <point x="750" y="350" type="line"/>
+      <point x="750" y="430" type="line"/>
+      <point x="750" y="615"/>
+      <point x="650" y="700"/>
+    </contour>
+    <contour>
+      <point x="480.0" y="0.0" type="line" smooth="yes"/>
+      <point x="650" y="0"/>
+      <point x="750.0" y="85.0"/>
+      <point x="750.0" y="270.0" type="curve"/>
+      <point x="750.0" y="350.0" type="line"/>
+      <point x="650.0" y="350.0" type="line"/>
+      <point x="650.0" y="290.0" type="line" smooth="yes"/>
+      <point x="650.0" y="125.0"/>
+      <point x="615.0" y="100.0"/>
+      <point x="400.0" y="100.0" type="curve"/>
+      <point x="130" y="100" type="line"/>
+      <point x="130" y="0" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.typemytype.robofont.layerData</key>
+      <dict>
+        <key>background</key>
+        <dict>
+          <key>anchors</key>
+          <array>
+          </array>
+          <key>components</key>
+          <array>
+          </array>
+          <key>contours</key>
+          <array>
+          </array>
+          <key>lib</key>
+          <dict>
+          </dict>
+          <key>name</key>
+          <string>D</string>
+          <key>unicodes</key>
+          <array>
+          </array>
+          <key>width</key>
+          <integer>800</integer>
+        </dict>
+      </dict>
+      <key>com.typemytype.robofont.mark</key>
+      <array>
+        <real>0.4809</real>
+        <real>1.0</real>
+        <real>0.7016</real>
+        <real>1.0</real>
+      </array>
+    </dict>
+  </lib>
+</glyph>

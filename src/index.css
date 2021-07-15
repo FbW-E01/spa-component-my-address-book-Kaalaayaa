@@ -1,0 +1,13 @@
+@font-face {
+font-family: "Basteleur";
+src: local("Basteleur"),
+ url('./basteleur-master/fonts/ttf/Basteleur-Bold.ttf') format("truetype");
+font-weight: bold;
+}
+
+@font-face {
+font-family: "Millimetre";
+src: local("Basteleur"),
+ url('./Millimetre-master/fonts/webfonts/Light/Millimetre-Light_web.ttf') format("truetype");
+font-weight: bold;
+}

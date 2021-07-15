@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="squareverticalbisectingline" format="1">
+  <advance width="1000"/>
+  <unicode hex="25EB"/>
+  <outline>
+    <contour>
+      <point x="550" y="-150" type="line"/>
+      <point x="550" y="650" type="line"/>
+      <point x="450" y="650" type="line"/>
+      <point x="450" y="-150" type="line"/>
+    </contour>
+    <component base="whitelargesquare"/>
+  </outline>
+</glyph>

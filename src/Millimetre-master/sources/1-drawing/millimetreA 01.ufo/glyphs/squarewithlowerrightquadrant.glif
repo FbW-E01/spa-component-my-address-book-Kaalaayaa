@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="squarewithlowerrightquadrant" format="1">
+  <advance width="1000"/>
+  <unicode hex="25F2"/>
+  <outline>
+    <contour>
+      <point x="900" y="200" type="line"/>
+      <point x="900" y="300" type="line"/>
+      <point x="450" y="300" type="line"/>
+      <point x="450" y="200" type="line"/>
+    </contour>
+    <contour>
+      <point x="450" y="200" type="line"/>
+      <point x="550" y="200" type="line"/>
+      <point x="550" y="650" type="line"/>
+      <point x="450" y="650" type="line"/>
+    </contour>
+    <component base="whitelargesquare"/>
+  </outline>
+</glyph>

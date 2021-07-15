@@ -1,0 +1,158 @@
+languagesystem DFLT dflt;
+languagesystem latn dflt;
+
+@bdc2smcp = [ a b c d e f g h i j k l m n o p q r s t u v w x y z agrave aacute acircumflex atilde adieresis aring ae ccedilla egrave eacute ecircumflex edieresis igrave iacute icircumflex idieresis itilde ij lslash ntilde ograve oacute ocircumflex otilde odieresis oslash oe scaron ugrave uacute ucircumflex  udieresis utilde yacute ycircumflex ydieresis ygrave zcaron eth thorn];
+
+@caps2smcp = [ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Agrave Aacute Acircumflex Atilde Adieresis Aring AE Ccedilla Egrave Eacute Ecircumflex Edieresis Igrave Iacute Icircumflex Idieresis Itilde IJ Lslash Ntilde Ograve Oacute Ocircumflex Otilde Odieresis Oslash OE Scaron Ugrave Uacute Ucircumflex Udieresis Utilde Yacute Ycircumflex Ydieresis Ygrave Zcaron Eth Thorn];
+
+@smcp.frombdc = [ A.small B.small C.small D.small E.small F.small G.small H.small I.small J.small K.small L.small M.small N.small O.small P.small Q.small R.small S.small T.small U.small V.small W.small X.small Y.small Z.small Agrave.small Aacute.small Acircumflex.small Atilde.small Adieresis.small Aring.small AE.small Ccedilla.small Egrave.small Eacute.small Ecircumflex.small Edieresis.small Igrave.small Iacute.small Icircumflex.small Idieresis.small Itilde.small IJ.small Lslash.small Ntilde.small Ograve.small Oacute.small Ocircumflex.small Otilde.small Odieresis.small Oslash.small OE.small Scaron.small Ugrave.small Uacute.small Ucircumflex.small Udieresis.small Utilde.small Yacute.small Ycircumflex.small Ydieresis.small Ygrave.small Zcaron.small Eth.small Thorn.small
+];
+
+@figs.LP = [zero one two three four five six seven eight nine];
+@figs.LT = [zero.LT one.LT two.LT three.LT four.LT five.LT six.LT seven.LT eight.LT nine.LT];
+@figs.sups =  [zero.sup one.sup two.sup three.sup four.sup five.sup six.sup seven.sup eight.sup nine.sup];
+@figs.sinf =  [zero.inf one.inf two.inf three.inf four.inf five.inf six.inf seven.inf eight.inf nine.inf];
+@figs.dnom =  [zero.dnom one.dnom two.dnom three.dnom four.dnom five.dnom six.dnom seven.dnom eight.dnom nine.dnom];
+@figs.all=[zero.slash zero one two three four five six seven eight nine zero.slash.LT zero.LT one.LT two.LT three.LT four.LT five.LT six.LT seven.LT eight.LT nine.LT];
+
+
+@sups.to = [ a.superior b.superior c.superior d.superior e.superior f.superior g.superior h.superior i.superior j.superior k.superior l.superior m.superior n.superior o.superior p.superior q.superior r.superior s.superior t.superior u.superior v.superior w.superior x.superior y.superior z.superior ];
+@sups.fromcap = [ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z ];
+@sups.fromlc = [ a b c d e f g h i j k l m n o p q r s t u v w x y z ];
+
+@casefrom = [exclamdown questiondown guilsinglleft guilsinglright guillemotleft guillemotright hyphen endash emdash bullet periodcentered parenleft parenright bracketleft bracketright braceleft braceright];
+@caseto = [exclamdown.cap questiondown.cap guilsinglleft.cap guilsinglright.cap guillemotleft.cap guillemotright.cap hyphen.cap endash.cap emdash.cap bullet.cap periodcentered.cap parenleft.cap parenright.cap bracketleft.cap bracketright.cap braceleft.cap braceright.cap ];
+
+
+
+feature aalt { # Access all Alternates
+  feature frac;
+  feature smcp;
+  feature c2sc;
+  feature case;
+  feature pnum;
+  feature tnum;
+  feature sups;
+  feature sinf;
+  feature numr;
+  feature dnom;
+  feature ordn;
+  feature zero;
+  feature salt;
+  feature ss01;
+  feature ss02;
+  feature swsh;
+} aalt;
+
+
+feature liga {
+    sub V T F by VTF;
+    sub v t f by VTF;
+    }liga;
+
+feature locl { # Localized Forms
+ # Latin
+ script latn;
+ language AZE; # Azeri
+    sub i by i.TRK;
+ language CRT; # Crimean Tatar
+    sub i by i.TRK;
+ language TRK; # Turkish
+    sub i by i.TRK;
+} locl;
+
+feature pnum {
+    sub @figs.LT by @figs.LP;
+} pnum;
+
+feature tnum {
+    sub @figs.LP by @figs.LT;
+} tnum;
+
+feature sups {
+# Latin 
+  sub @figs.LP by @figs.sups;
+  # sub @math by @math.sups;
+  sub @sups.fromcap by @sups.to;
+  sub @sups.fromlc by @sups.to;
+  sub i.TRK by i.superior;
+} sups;
+
+feature numr {
+# Latin 
+  sub @figs.LP by @figs.sups;
+  #sub @math by @math.sinf;
+} numr;
+
+feature sinf {
+# Latin 
+  sub @figs.LP by @figs.sinf;
+  #sub @math by @math.sinf;
+} sinf;
+
+feature dnom {
+# Latin 
+  sub @figs.LP by @figs.dnom;
+  #sub @math by @math.sinf;
+} dnom;
+
+feature ordn { # Ordinals
+  sub @figs.all [O o]' by ordmasculine;
+  sub @figs.all [A a]' by ordfeminine;
+  sub N [O o degree ordmasculine] by numero;
+  sub n [O o degree ordmasculine] by numero;
+  sub @sups.fromcap by @sups.to;
+  sub @sups.fromlc by @sups.to;
+  sub i.TRK by i.superior;
+} ordn;
+
+feature frac { # Fractions
+  sub slash by fraction;
+  sub @figs.LP by @figs.sups;
+  sub [fraction @figs.dnom onehalf onequarter threequarters] @figs.sups' by @figs.dnom;
+} frac;
+
+
+feature zero { # Slashed Zero
+
+ # DEFAULT
+
+    sub [zero zero.LT ] by [zero.slash zero.slash.LT ];
+
+ script latn; # Latin
+
+    sub [zero zero.LT ] by [zero.slash zero.slash.LT ];
+    
+ language TRK ; # Turkish
+
+} zero;
+
+feature smcp{
+    sub @bdc2smcp by @smcp.frombdc;
+    }smcp;
+    
+feature c2sc{
+    sub @caps2smcp by @smcp.frombdc;
+    }c2sc;
+
+feature case{
+    sub @casefrom by @caseto;
+    }case;
+
+feature ss01{
+    sub [a agrave aacute acircumflex atilde adieresis aring ae] by [a.alt agrave.alt aacute.alt acircumflex.alt atilde.alt adieresis.alt aring.alt ae.alt];
+    }ss01;
+    
+feature ss02{
+    lookup g_alt {
+        sub g by g.alt;
+        } g_alt;
+    }ss02;
+
+feature salt{
+    lookup g_alt;
+    }salt;
+
+feature swsh{
+    sub [a agrave aacute acircumflex atilde adieresis aring ae] by [a.alt agrave.alt aacute.alt acircumflex.alt atilde.alt adieresis.alt aring.alt ae.alt];
+    }swsh;

@@ -1,0 +1,57 @@
+languagesystem DFLT dflt;
+languagesystem latn dflt;
+
+@bdc2smcp = [ a b c d e f g h i j k l m n o p q r s t u v w x y z agrave aacute acircumflex atilde adieresis aring ae ccedilla egrave eacute ecircumflex edieresis igrave iacute icircumflex idieresis itilde ij lslash ntilde ograve oacute ocircumflex otilde odieresis oslash oe scaron ugrave uacute ucircumflex  udieresis utilde yacute ycircumflex ydieresis ygrave zcaron eth thorn];
+
+@smcp.frombdc = [ A.small B.small C.small D.small E.small F.small G.small H.small I.small J.small K.small L.small M.small N.small O.small P.small Q.small R.small S.small T.small U.small V.small W.small X.small Y.small Z.small Agrave.small Aacute.small Acircumflex.small Atilde.small Adieresis.small Aring.small AE.small Ccedilla.small Egrave.small Eacute.small Ecircumflex.small Edieresis.small Igrave.small Iacute.small Icircumflex.small Idieresis.small Itilde.small IJ.small Lslash.small Ntilde.small Ograve.small Oacute.small Ocircumflex.small Otilde.small Odieresis.small Oslash.small OE.small Scaron.small Ugrave.small Uacute.small Ucircumflex.small Udieresis.small Utilde.small Yacute.small Ycircumflex.small Ydieresis.small Ygrave.small Zcaron.small Eth.small Thorn.small
+];
+
+@figs.LP = [zero one two three four five six seven eight nine];
+@figs.LT = [zero.LT one.LT two.LT three.LT four.LT five.LT six.LT seven.LT eight.LT nine.LT];
+@figs.sups =  [zero.sup one.sup two.sup three.sup four.sup five.sup six.sup seven.sup eight.sup nine.sup];
+@figs.sinf =  [zero.inf one.inf two.inf three.inf four.inf five.inf six.inf seven.inf eight.inf nine.inf];
+
+@sups.to = [ a.superior b.superior c.superior d.superior e.superior f.superior g.superior h.superior i.superior j.superior k.superior l.superior m.superior n.superior o.superior p.superior q.superior r.superior s.superior t.superior u.superior v.superior w.superior x.superior y.superior z.superior ];
+@sups.fromcap = [ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z ];
+@sups.fromlc = [ a b c d e f g h i j k l m n o p q r s t u v w x y z ];
+
+feature pnum {
+    sub @figs.LT by @figs.LP;
+} pnum;
+
+feature tnum {
+    sub @figs.LP by @figs.LT;
+} tnum;
+
+feature sups {
+# Latin 
+  sub @figs.LP by @figs.sups;
+  # sub @math by @math.sups;
+  sub @sups.fromcap by @sups.to;
+  sub @sups.fromlc by @sups.to;
+  sub i.TRK by i.superior;
+} sups;
+
+feature sinf {
+# Latin 
+  sub @figs.LP by @figs.sinf;
+  #sub @math by @math.sinf;
+} sinf;
+
+feature smcp{
+    sub @bdc2smcp by @smcp.frombdc;
+    }smcp;
+    
+feature ss01{
+    sub [a agrave aacute acircumflex atilde adieresis aring ae] by [a.alt agrave.alt aacute.alt acircumflex.alt atilde.alt adieresis.alt aring.alt ae.alt];
+    }ss01;
+    
+feature ss02{
+    lookup g_alt {
+        sub g by g.alt;
+        } g_alt;
+    }ss02;
+
+feature salt{
+    lookup g_alt;
+    }salt;

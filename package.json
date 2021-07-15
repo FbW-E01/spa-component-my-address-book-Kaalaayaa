@@ -4,7 +4,8 @@
   "description": "🦆",
   "main": "index.jsx",
   "scripts": {
-    "enter-the-ducks": "react-scripts start"
+    "enter-the-ducks": "react-scripts start",
+    "start": "react-scripts start"
   },
   "keywords": [],
   "author": "",

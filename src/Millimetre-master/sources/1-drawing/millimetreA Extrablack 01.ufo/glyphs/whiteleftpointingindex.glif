@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="whiteleftpointingindex" format="1">
+  <advance width="1000"/>
+  <unicode hex="1F448"/>
+  <outline>
+    <component base="White_Up_Pointing_Backhand_Index" xScale="2.77555756156e-17" xyScale="1.0" yxScale="-1.0" yScale="2.77555756156e-17" xOffset="855" yOffset="10"/>
+    <component base="whiteuppointingindex" xScale="-2.22044604925e-16" xyScale="1.0" yxScale="-1.0" yScale="-2.22044604925e-16" xOffset="855" yOffset="60"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.typemytype.robofont.mark</key>
+      <array>
+        <real>1.0</real>
+        <real>0.0</real>
+        <real>0.0</real>
+        <real>1.0</real>
+      </array>
+    </dict>
+  </lib>
+</glyph>

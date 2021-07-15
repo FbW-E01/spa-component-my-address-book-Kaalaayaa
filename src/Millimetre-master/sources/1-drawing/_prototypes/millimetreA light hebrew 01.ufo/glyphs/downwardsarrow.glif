@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="downwardsarrow" format="1">
+  <advance width="600"/>
+  <unicode hex="2193"/>
+  <outline>
+    <component base="leftwardsarrow" xScale="-2.220446049250313e-16" xyScale="1.0000000000000009" yxScale="-1.0000000000000009" yScale="-2.220446049250313e-16" xOffset="550" yOffset="-50"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.typemytype.robofont.mark</key>
+      <array>
+        <real>0.8157</real>
+        <real>0.8157</real>
+        <real>0.8157</real>
+        <real>1.0</real>
+      </array>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="squarewithlowerleftquadrant" format="1">
+  <advance width="1000"/>
+  <unicode hex="25F1"/>
+  <outline>
+    <contour>
+      <point x="100" y="275" type="line"/>
+      <point x="100" y="225" type="line"/>
+      <point x="525" y="225" type="line"/>
+      <point x="525" y="275" type="line"/>
+    </contour>
+    <contour>
+      <point x="525" y="275" type="line"/>
+      <point x="475" y="275" type="line"/>
+      <point x="475" y="-150" type="line"/>
+      <point x="525" y="-150" type="line"/>
+    </contour>
+    <component base="whitelargesquare"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.typemytype.robofont.mark</key>
+      <array>
+        <real>0.0</real>
+        <real>0.0</real>
+        <real>1.0</real>
+        <real>1.0</real>
+      </array>
+    </dict>
+  </lib>
+</glyph>

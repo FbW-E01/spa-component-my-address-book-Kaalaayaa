@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="diamondinsquare" format="1">
+  <advance width="1000"/>
+  <unicode hex="26CB"/>
+  <outline>
+    <contour>
+      <point x="50" y="295" type="line"/>
+      <point x="515" y="-170" type="line"/>
+      <point x="555" y="-70" type="line"/>
+      <point x="180" y="305" type="line"/>
+    </contour>
+    <contour>
+      <point x="460" y="555" type="line"/>
+      <point x="820" y="195" type="line"/>
+      <point x="875" y="280" type="line"/>
+      <point x="475" y="680" type="line"/>
+    </contour>
+    <contour>
+      <point x="900" y="245" type="line"/>
+      <point x="810" y="295" type="line"/>
+      <point x="455" y="-60" type="line"/>
+      <point x="485" y="-170" type="line"/>
+    </contour>
+    <contour>
+      <point x="555" y="570" type="line"/>
+      <point x="525" y="680" type="line"/>
+      <point x="115" y="270" type="line"/>
+      <point x="180" y="195" type="line"/>
+    </contour>
+    <component base="whitelargesquare"/>
+  </outline>
+</glyph>

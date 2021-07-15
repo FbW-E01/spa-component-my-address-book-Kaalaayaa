@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="dottedsquare" format="1">
+  <advance width="1000"/>
+  <unicode hex="2B1A"/>
+  <outline>
+    <contour>
+      <point x="500" y="120" type="curve" smooth="yes"/>
+      <point x="415.0" y="120.0"/>
+      <point x="370.0" y="163.33333333333334"/>
+      <point x="370" y="250" type="curve" smooth="yes"/>
+      <point x="370.0" y="335.0"/>
+      <point x="416.94444444444446" y="380.0"/>
+      <point x="500" y="380" type="curve" smooth="yes"/>
+      <point x="585.0" y="380.0"/>
+      <point x="630.0" y="336.66666666666663"/>
+      <point x="630" y="250" type="curve" smooth="yes"/>
+      <point x="630.0" y="163.33333333333334"/>
+      <point x="585.0" y="120.0"/>
+    </contour>
+    <component base="whitelargesquare"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.typemytype.robofont.mark</key>
+      <array>
+        <real>0.0</real>
+        <real>0.0</real>
+        <real>1.0</real>
+        <real>1.0</real>
+      </array>
+    </dict>
+  </lib>
+</glyph>

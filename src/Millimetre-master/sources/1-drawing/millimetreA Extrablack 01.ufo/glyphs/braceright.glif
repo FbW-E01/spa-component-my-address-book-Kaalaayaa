@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="braceright" format="1">
+  <advance width="250.0"/>
+  <unicode hex="007D"/>
+  <outline>
+    <component base="braceleft" xScale="-1.0" xyScale="5.55111512313e-17" yxScale="-5.55111512313e-17" yScale="-1.0" xOffset="250" yOffset="500"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.typemytype.robofont.layerData</key>
+      <dict>
+        <key>regular</key>
+        <dict>
+          <key>anchors</key>
+          <array>
+          </array>
+          <key>components</key>
+          <array>
+            <dict>
+              <key>baseGlyph</key>
+              <string>braceleft</string>
+              <key>transformation</key>
+              <array>
+                <real>-1.0</real>
+                <real>5.55111512313e-17</real>
+                <real>-5.55111512313e-17</real>
+                <real>-1.0</real>
+                <integer>250</integer>
+                <integer>500</integer>
+              </array>
+            </dict>
+          </array>
+          <key>contours</key>
+          <array>
+          </array>
+          <key>lib</key>
+          <dict>
+          </dict>
+          <key>name</key>
+          <string>braceright</string>
+          <key>unicodes</key>
+          <array>
+          </array>
+          <key>width</key>
+          <real>250.0</real>
+        </dict>
+      </dict>
+    </dict>
+  </lib>
+</glyph>

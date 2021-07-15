@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="Zcaron.small" format="1">
+  <advance width="600"/>
+  <outline>
+    <component base="z"/>
+    <component base="caron" xOffset="195" yOffset="-50"/>
+    <contour>
+      <point x="270.0" y="450.0" type="move" name="top"/>
+    </contour>
+  </outline>
+</glyph>

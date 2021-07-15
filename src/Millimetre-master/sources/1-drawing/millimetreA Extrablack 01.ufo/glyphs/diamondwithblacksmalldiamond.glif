@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="diamondwithblacksmalldiamond" format="1">
+  <advance width="1000"/>
+  <unicode hex="25C8"/>
+  <outline>
+    <contour>
+      <point x="500" y="-105" type="line"/>
+      <point x="145" y="250" type="line"/>
+      <point x="500" y="605" type="line"/>
+      <point x="855" y="250" type="line"/>
+    </contour>
+    <contour>
+      <point x="500" y="-245" type="line"/>
+      <point x="995" y="250" type="line"/>
+      <point x="500" y="745" type="line"/>
+      <point x="5" y="250" type="line"/>
+    </contour>
+    <contour>
+      <point x="500" y="3" type="line"/>
+      <point x="748" y="250" type="line"/>
+      <point x="500" y="498" type="line"/>
+      <point x="253" y="250" type="line"/>
+    </contour>
+  </outline>
+</glyph>
